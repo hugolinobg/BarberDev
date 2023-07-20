@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Sora", sans-serif;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #fff;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #d34040;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+.haeder-button {
+  border: 0.1rem solid #fff;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.haeder-button:hover {
+  border: 0.1rem solid #d34040;
+  background-color: #d34040;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    margin-top: 2.6rem;
+    font-size: 3.4rem;
+  }
+  .header-logo img {
+    width: 160px;
+    margin-top: 46px;
+  }
+  .haeder-button {
+    display: none;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../image/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.hero {
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 948px;
+  font-size: 4.6rem;
+}
+.hero p {
+  text-align: center;
+  margin: 1.4rem 0;
+}
+
+.button-contact {
+  padding: 1.4rem 2.8rem;
+  color: #fff;
+  background-color: #d94140;
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1.4rem 0;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #fff;
+}
+
+.acbout-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  padding: 3.4rem 1.4rem 6.4rem 1.4rem;
+}
+.acbout-content img {
+  max-width: 578px;
+}
+
+.acbout-content div {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 3.8rem;
+  margin-bottom: 2.4rem;
+}
+.about-description p {
+  margin-bottom: 1.4rem;
+  line-height: 150%;
+}
+
+.services {
+  background-color: #fff;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.4rem 1.4rem;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 1.4rem;
+  text-align: center;
+  max-width: 788px;
+}
+
+.haircuts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 0 4.4rem 3.4rem 4.4rem;
+}
+
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0px -0.1rem 1.7rem -0.4rem rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+.haircut img {
+  width: 100%;
+  max-width: 354px;
+  transition: transform 0.2s;
+}
+
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.haircut-info button {
+  color: #fff;
+  background-color: #d94140;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 5.4rem 0;
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 0.8rem;
+  color: #fff;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  right: 14px;
+  bottom: 24px;
+  z-index: 9999;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 0.6rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  background-color: #232224;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 68vh;
+  }
+  .hero h1 {
+    font-size: 3.4rem;
+    padding: 0 1.4rem;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 1.4rem;
+  }
+  .acbout-content {
+    flex-direction: column;
+  }
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img {
+    max-width: 748px;
+  }
+  .footer p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .btn-whatsapp img {
+    max-width: 64px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .hero h1 {
+    font-size: 3rem;
+    padding: 0 1.4rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 290px) {
+  .hero h1 {
+    font-size: 2.4rem;
+    padding: 0 1.4rem;
+    width: 100%;
+  }
+}
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #06121e;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0c2135;
+  border-radius: 999px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #06121e;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
