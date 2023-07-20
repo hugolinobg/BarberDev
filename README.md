@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Sass
-- Animate On Scroll Library
+- AOS - Animate On Scroll Library
 - Figma
 - Git
 - Github
