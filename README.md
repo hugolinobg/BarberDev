@@ -20,7 +20,7 @@
 
 Projeto construído na aula do canal do [Sujeito Programador](https://youtu.be/Fzc_dnqD-V0) no youtube.
 
-[🔗 Clique aqui para acessar o projeto](https://hugolinobg.github.io/contagem-regressiva-ano-novo/)
+[🔗 Clique aqui para acessar o projeto](https://hugolinobg.github.io/BarberDev/)
 
 
 ## 🚀 Tecnologias
